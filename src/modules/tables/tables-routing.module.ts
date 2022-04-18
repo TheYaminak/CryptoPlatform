@@ -26,7 +26,7 @@ export const ROUTES: Routes = [
                     link: '/dashboard',
                 },
                 {
-                    text: 'Tables',
+                    text: 'Settings',
                     active: true,
                 },
             ],

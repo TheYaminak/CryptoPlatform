@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from '@modules/auth/services';
 
 @Component({
@@ -8,6 +9,11 @@ import { UserService } from '@modules/auth/services';
     styleUrls: ['top-nav-user.component.scss'],
 })
 export class TopNavUserComponent implements OnInit {
-    constructor(public userService: UserService) {}
+    constructor(public userService: UserService, private router: Router) {}
     ngOnInit() {}
+
+    logout(){
+        localStorage.removeItem('login');
+        this.router.navigate(['auth/login']);
+    }
 }

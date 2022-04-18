@@ -1,0 +1,21 @@
+# Bot configurations
+
+# binance api key
+api-key: "bad2jKsjtlvH2nhr4tG2MiUD5FS43R41qKKEtmD2CI50O7KvjAqugLqzw0eA9byd"
+# binance secret key
+secret-key: "DfOgICWSr4BGSTI7WRVzokxebEYpVD8rw7Vym5g4jtU5FB0SRIZt7gqFYjiFO887"
+# use testnet or not
+use-test-net: false
+# trading pair
+symbol: "AXSBUSD"
+# port for bot
+port: "3010"
+
+# minimal trade amount
+trade-amount: 0.05
+# take profit in percent
+profit-in-percent: 0.01
+stop-sum-of-open-orders-for-last-day: 1800
+daily-ratio-for-stop-price: 0.50
+weekly-ratio-for-stop-price: 0.30
+time-until-last-trade-price-will-reset: 7200
